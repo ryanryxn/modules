@@ -8,34 +8,67 @@
 /** Base Styles **/
 * {
 	box-sizing: border-box;
+	font-family: Helvetica;
+	margin: 0;
 }
 h1 {
 	margin-bottom: 15px;
+	font-size: 175%;
+	text-align: center;
+}
+h2	{
+	text-align: center;
+}
+h3 {
+	font-size: 125%;
 }
 section {
 	border: 1px solid black;
 	background-color: beige;
-	width: 90%;
 	height: 250px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	margin-left: auto;
-	font-family: Helvetica;
+	margin-top: 10px;
+	margin-left: 10px;
 	color: black;
+	position: relative;
 }
 p {
 	padding: 10px;
 }
-
+#thekick {
+	background-color: hotpink;
+	border: 1px solid black;
+	text-align: center;
+	height: 50%;
+	width: 90%;
+	position: relative;
+	left: 10%;
+}
+#inreallife {
+	background-color: deepskyblue;
+	border: 1px solid black;
+	text-align: center;
+	height: 50%;
+	width: 90%;
+	position: relative;
+	left: 10%;
+}
+#harryshouse {
+	background-color: rosybrown;
+	border:  1px solid black;
+	text-align: center;
+	height: 50%;
+	width: 90%;
+	position: relative;
+	left: 10%;
+}
 		.row {
-			width: 100%;
+			width: 95%;
 		}
 	/** Desktop view **/	
 	@media (min-width: 992px) {
 		.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
 			float: left;
-			border: 1px solid green
+			border: 1px solid black;
 		}
 	.col-lg-1 {
 		width: 8.33%;
@@ -78,7 +111,7 @@ p {
 	@media (min-width: 768px) and (max-width: 991px) {
 		.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 			float: left;
-			border: 1px solid green
+			border: 1px solid black;
 		}
 	.col-md-1 {
 		width: 8.33%;
@@ -121,7 +154,7 @@ p {
 	@media (max-width: 767px) {
 		.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 			float: left;
-			border: 1px solid green
+			border: 1px solid black;
 		}
 	.col-sm-1 {
 		width: 8.33%;
@@ -161,23 +194,25 @@ p {
 	}
 }	
 </style>
+
 	<title>Favorite 2022 albums so far</title>
 </head>
+
 <body>
 <h1>Top 3 albums of 2022 thus far</h1>
 <h2>in no particular order</h2>
 
 <div class="row">
-<section class="col-lg-4 col-md-5 col-sm-12">
-	<div><h3>"The Kick" by Foxes</h3></div>
+<section class="col-lg-3 col-md-5 col-sm-12">
+	<div><h3 id=thekick>"The Kick" by Foxes</h3></div>
 	<p>It's so DANCEY and 80s. Her first album in 6 years is NEAUX disappointment. Bless yourselves with "Sister Ray," "Absolute," "Two Kinds of Silence," and her magnum opus "Sky Love." Thank you.</p>
 </section>
-<section class="col-lg-4 col-md-5 col-sm-12">
-	<div><h3>"In Real Life" by Mandy Moore</h3></div>
+<section class="col-lg-3 col-md-5 col-sm-12">
+	<div><h3 id=inreallife>"In Real Life" by Mandy&nbsp;Moore</h3></div>
 	<p>She has really found her voice. Baby let herself play around with a synth or two on this album after going away from pop music following her 2001 album. Still as wise as ever. Listen to "In Other Words" and "Four Moons" to FEEL again.</p>
 </section>
-<section class="col-lg-4 col-md-10 col-sm-12">
-	<div><h3>"Harry's House" by Harry Styles</h3></div>
+<section class="col-lg-3 col-md-10 col-sm-12">
+	<div><h3 id=harryshouse>"Harry's House" by Harry&nbsp;Styles</h3></div>
 	<p>His voice is wonderful. It simply is. His most pop album to date still has indie flair that I love. You must stream "Dayight," "Grapejuice," and "Keep Driving" if you need an example of good music.</p>		
 </section>
 </div>
